@@ -1,0 +1,11 @@
+{
+    "manifest_version": 2,
+    "name": "stads_enhancer",
+    "version":"1.0.0",
+    "content_scripts": [
+        {
+            "matches": ["https://sb.aau.dk/sb-ad/sb/resultater/studresultater.jsp"],
+            "js": ["Content.js"]
+        }
+    ]
+}
