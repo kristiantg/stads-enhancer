@@ -1,6 +1,7 @@
 let table = document.getElementById('resultTable');
 let tableChildren = table.children;
 let rows = tableChildren[1].rows;
+
 let sumOfECTS = 0;
 let gradeAverage = 0;
 let gradeAverageWeighted = 0;
@@ -43,7 +44,7 @@ function getSumOfECTS() {
 function removeFailed() {
     for (let row of rows) { 
         let grade = row.children[2].innerText;
-        if(!isNaN(grade)){
+        if(!isNaN(grade) || grade === 'EB'){
             if(removeFailed && (grade === '00' || grade === 'EB' || grade === '-03')){
                 row.remove();
             }
