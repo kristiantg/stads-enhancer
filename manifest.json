@@ -1,11 +1,17 @@
 {
     "manifest_version": 2,
-    "name": "stads_enhancer",
-    "version":"1.0.0",
+    "name": "AAU Stads Enhancer",
+    "version":"0.1",
+    "description":"Udregner dit karakter-gennemsnit og vægtet karakter-gennemsnit på Stads for AAU.",
+    "icons": {
+        "16": "assets/stads-enhancer-logo16.png",
+        "48": "assets/stads-enhancer-logo48.png",
+        "128": "assets/stads-enhancer-logo128.png"
+      },
     "content_scripts": [
         {
             "matches": ["https://sb.aau.dk/sb-ad/sb/resultater/studresultater.jsp"],
-            "js": ["Content.js"]
+            "js": ["stads_enhancer.js"]
         }
     ]
 }
