@@ -2,6 +2,9 @@ let table = document.getElementById('resultTable');
 let tableChildren = table.children;
 let rows = tableChildren[1].rows;
 
+rows[rows.length-1].remove();
+rows[rows.length-1].remove();
+
 let sumOfECTS = 0;
 let gradeAverage = 0;
 let gradeAverageWeighted = 0;
